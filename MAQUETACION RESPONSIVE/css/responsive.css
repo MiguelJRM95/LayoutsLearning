@@ -1,0 +1,334 @@
+@media (max-width: 1250px){
+    #banner h1{
+        margin-left: 23%;
+    }
+    
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .card{
+        width: 15.95%;
+        margin: 1.9%;
+    }
+
+    .card p{
+        display: block;
+        width: 90%;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    #sistoper{
+        margin-bottom: 10px;
+    }
+
+    #articles{
+        width: 65%;
+    }
+
+    #articles article{
+        width: 97%;
+    }
+
+    #footer .wrap > div{
+        width: 25%;
+        margin: 4.1%;
+    }
+
+    #footer #browsers img{
+        width: 15%;
+    }
+
+    #footer h5{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1080px){
+    .card{
+        height: 180px;
+        overflow: hidden;
+    }
+
+    .card .icon{
+        height: 104px;
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .card .category{
+        padding-top: 0;
+        margin: 0 auto;
+    }
+
+    .card .description {
+        opacity: 0;
+    }
+
+    #articles{
+        width: 61%;
+    }
+}
+
+@media (max-width: 970px){
+
+    .wrap{
+        width: 93%;
+    }
+
+    #banner h1{
+        margin-left: 20%;
+    }
+
+    .card{
+        width: 16.4%;
+        margin: 1.1%;
+        padding:0px 5px 0px 5px ;
+    }
+
+    #articles{
+        width: 59%;
+    }
+
+    #footer .wrap{
+        margin-left: 11px;
+    }
+
+}
+
+@media (max-width: 920px){
+    .wrap{
+        width: 99.9%;
+    }
+
+    #banner h1{
+        margin-left: 18%;
+    }
+
+    #articles{
+        margin-left: 12px;
+    }
+
+    #footer .wrap{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 856px){
+    #banner h1{
+        margin-left: 16.5%;
+    }
+
+    .card{
+        width: 15.4%;
+        height: 180px;
+        overflow: hidden;
+        margin-left: 1.8%;
+    }
+
+    #articles{
+        width: 55.9%;
+    }
+
+    #html {
+        transform: translateX(-14px);
+    }
+}
+
+@media (max-width: 799px){
+    .card{
+        height: 160px;
+    }
+    .card .category{
+        font-size: 17px;
+    }
+
+    #articles{
+        width: 51%;
+    }
+
+    #articles article{
+        overflow: hidden;
+    }
+
+    #articles article h4{
+        font-size: 16px;
+    }
+
+    #footer h5{
+        font-size: 27px;
+    }
+
+    #html {
+        transform: translateX(-35px);
+    }
+
+    #footer #browsers img{
+        width: 13%;
+    }
+
+    #location{
+        height: 80px;
+    }
+}
+
+@media (max-width: 724px){
+    #banner h1{
+        margin-left: 12%;
+    }
+
+    .card{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .card .icon{
+        margin-top: -8px;
+        color: #3eb8e5;
+    }
+
+    .card .category{
+        opacity: 0;
+    }
+
+    #articles{
+        width: 55%;
+    }
+
+
+    #articles .data{
+        opacity: 0;
+        position: absolute;
+    }
+
+    #lateral{
+        width: 37%;
+    }
+
+    #lateral input[type="button"]{
+        padding-left: 2px;
+    }
+
+    #limpiar{
+        position: absolute;
+        opacity: 0;
+    }
+    
+    #login input[type="submit"]{
+        margin-left: 60px;
+    }
+
+    #login a{
+        margin: 5px;
+    }
+}
+
+@media (max-width: 656px){
+    
+
+    #logo{
+        background: none;
+        width: 50px;
+    }
+
+    #logo .gear{
+        margin-top: 8px;
+        margin-left: 6px;
+    }
+
+    #logo h3{
+        display: none;
+        opacity: 0;
+    }
+
+    #banner h1{
+        width: 100%;
+        margin-left: 9%;
+    }
+
+    .card{
+        width: 60px;
+        height: 60px;
+        align-content: center;
+        text-align: center;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .card:first-of-type{
+        margin-left: 16%;
+    }
+
+    .card .icon{
+        margin-top: -27px;
+        font-size: 30px;
+    }
+
+    .card:hover .icon{
+        font-size: 30px;
+    }
+
+    #html {
+        width: 240px;
+    }
+    
+}
+
+@media (max-width: 655px){
+
+    #lateral{
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+    }
+
+    #articles{
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #lateral input[type="text"],
+    #lateral input[type="email"],
+    #lateral input[type="password"]{
+        width: 93%;
+    }
+
+    #lateral input[type="button"]{
+        padding-left: 7px;
+    }
+
+    #login input[type="submit"] {
+        margin-left: 228px;
+    }
+
+    #login a {
+        text-align: center;
+    }
+
+    #footer{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    #footer .wrap > div{
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    
+    #html {
+        transform: translateX(10px);
+    }
+   
+    #footer h5{
+        font-size: 22px;
+        
+    }
+
+}
