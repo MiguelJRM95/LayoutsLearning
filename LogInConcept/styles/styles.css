@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url(./fonts/websymbols-regular-webfont.eot);
+    src: url(./fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/websymbols-regular-webfont.woff) format('woff'),
+        url(./fonts/websymbols-regular-webfont.ttf) format('truetype'),
+        url(./fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,*::after,*::before{
+	padding: 0px auto;
+	margin: 0px auto;
+}
+
+/* Posicionado de elementos principales */
+body{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr 10vh;
+    grid-template-areas: 
+        "cabecera cabecera cabecera cabecera cabecera"
+        "contenido contenido contenido contenido lateral"
+        "pie pie pie pie pie";
+    width: 100vw;  
+    height: 100vh;
+    margin: 0px auto;
+	--background: #e0e5ec;
+	--gray: #797d7f;
+	background-color: var(--background);
+}
+
+
+#cabecera{
+	background-color: #2b2d42;
+	width: 100vw;
+	grid-area: cabecera;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#contenido{
+	padding-bottom: 20vh;
+	width: 100vw;
+	grid-area: contenido;
+	margin: 0 auto;
+	align-self: center;
+}
+
+#pie{
+	background-color: #2b2d42;
+	width: 100vw;
+	grid-area: pie;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+/* posicionado elementos cabecera */
+
+
+#search{
+	background-color: whitesmoke;
+	border-radius: 10px;
+	padding: 0px;
+	cursor: text;
+	box-shadow: inset 0px 14px 10px rgba(0,0,0,0.15),
+	0px 24px 2px rgba(0,0,0,0.1);
+}
+
+#label{
+	border: none;
+	background-color: transparent;
+}
+
+form input[type="text"]:focus{
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+.icon{
+	font-family: "WebSymbolsRegular";
+	height: 2rem;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #ccc;
+    color: #555;
+	padding-left: 6px;
+	outline: none;
+	border-radius: 10px;
+}
+
+.icon:active{
+	color:coral;
+	background-color: var(--background);
+	outline: none;
+	border-radius: 10px;
+}
+
+/* Formulario contenido */
+ul{
+	padding: 0px;
+}
+
+#formulario{
+	padding-top: 5vh;
+	padding-bottom: 12vh;
+	width: 30%;
+	max-height: 20vh;
+	display: flex;
+	border-radius: 12px;
+	box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8),
+	  -8px -8px 16px rgba(255, 255, 255, 0.8);
+	color: var(--gray);
+	font-family: "Raleway", sans-serif;
+}
+
+#form{
+	margin-bottom: 20vh;
+}
+
+label, #user, #pass{
+	display: block;
+}
+
+#user, #pass{
+	background-color: transparent;
+	border: 1px solid #a1cc52;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	margin-top: 5px;
+	width: 19vw;
+	height: 4vh;
+}
+
+#user:focus, #pass:focus{
+	background-color: transparent;
+    border-color: #9ecaed;
+    box-shadow: 3px 4px 10px #9eedd5;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	outline: none;
+	animation: blink 10s infinite linear;
+}
+
+@keyframes blink{
+    0%{
+		border: 2px solid #37bcf9;
+		border-top: 0px;
+		border-right: 0px;
+		border-left: 0px;
+    }
+    25%{
+		border: 2px solid green;
+		border-top: 0px;
+		border-right: 0px;
+		border-left: 0px;
+    }
+    50%{
+		border: 2px solid yellow;
+		border-top: 0px;
+		border-right: 0px;
+		border-left: 0px;
+    }
+    75%{
+		border: 2px solid white;
+		border-top: 0px;
+		border-right: 0px;
+		border-left: 0px;
+    }
+    100%{
+		border: 2px solid #37bcf9;
+		border-top: 0px;
+		border-right: 0px;
+		border-left: 0px;
+    }
+}
+
+#labelPass{
+	margin-top: 2rem;
+}
+
+.label{
+	font-size: 2em;
+	font-weight: 400;
+}
+
+#formButton{
+	position: sticky;
+	margin-left: 7vw;
+}
+
+#button{
+	border: none;
+	transition: 0.2s box-shadow ease-in-out;
+	min-width: 70px;
+	min-height: 70px;
+	cursor: pointer;
+	border-radius: 20%;
+	box-shadow: -8px -8px 20px 0px #fff9, 
+		-6px -6px 6px 0px #fff9,
+		8px 8px 20px 0px #0001, 
+		5px 5px 6px 0px #0001,
+		inset 0px 0px 0px 0px #fff9,
+		inset 0px 0px 0px 0px #0001, 
+		inset 0px 0px 0px 0px #fff9,
+		inset 0px 0px 0px 0px #0001;
+	animation: blink 10s infinite linear;
+	outline: none;
+}
+
+#button:active{
+	box-shadow: 0px 0px 0px 0px #fff9,
+		0px 0px 0px 0px #fff9,
+		0px 0px 0px 0px #0001,
+		0px 0px 0px 0px #0001,
+		inset -8px -8px 20px 0px #fff9,
+		inset -5px -5px 6px 0px #fff9,
+		inset 8px 8px 20px 0px #0003,
+		inset 5px 5px 6px 0px #0001;
+	outline: none;
+}
+
+#button > i{
+	color: var(--gray);
+  	transition: 0.2s font-size ease-in-out;
+	opacity: 0.8;
+	outline: none;
+}
+
+#button:active > i{
+	color: var(--gray);
+  	opacity: 1;
+	font-size: 1.2rem;
+	outline: none;
+}
+
+/* brand name style */
+h1, h2{
+	font-family: "Bungee Outline", cursive;
+	color: #dadada;
+	line-height: 19px;	
+}
+
+h1{
+	color: coral;
+}
+
+h2{
+	padding-left: 125px;
+	font-size: 2em;
+	text-shadow: 0px 3px 0px #b2a98f,
+	0px 14px 10px rgba(0,0,0,0.15),
+	0px 24px 2px rgba(0,0,0,0.1),
+	0px 34px 30px rgba(0,0,0,0.1);
+
+}
+
+/* Estilos Footer */
+#descripcion{
+	font-family: "Raleway", sans-serif;
+	color: white;
+}
+
+#navSocial{
+	list-style: none;
+}
+
+li{
+	list-style: none;
+	display: inline;
+	margin-right: 4vw;
+}
+
+li > a:hover{
+	text-shadow: 0px 3px 0px #7e7272,
+	0px 14px 10px rgba(0, 0, 0, 0.15),
+	0px 24px 2px rgba(0,0,0,0.1),
+	0px 34px 30px rgba(0,0,0,0.1);
+}
+
+li > a:hover > i{
+	color: coral;
+}
+
+.social{
+	color: white;
+	font-size: 3em;
+	outline: none;
+}
